@@ -388,8 +388,12 @@ a {
   h2 {
     font-size: 1.3rem;
   }
+  form {
+    justify-items: center;
+  }
   .inputs {
     grid-column: span 2;
+    width: 100%;
   }
   button {
     margin: 0 5rem;
