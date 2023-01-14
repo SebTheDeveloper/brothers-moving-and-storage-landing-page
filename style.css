@@ -173,6 +173,7 @@ form {
 }
 input,
 select {
+  text-align: center;
   margin: 1rem 0;
   border-radius: 2px;
   border: 0;
@@ -284,7 +285,7 @@ a {
     font-size: 3.5rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1275px) {
   main {
     flex-direction: column;
     padding: 1rem;
@@ -365,11 +366,14 @@ a {
     margin: 0 8rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   input,
   select {
     padding: .8rem 0;
-    font-size: .65rem;
+    font-size: 1rem;
+  }
+  label {
+    font-size: 1.25rem;
   }
   main {
     padding: 1rem 0;
@@ -377,8 +381,15 @@ a {
   .hero-left {
     padding: 0 1rem;
   }
+  .form-wrapper {
+    padding: 1rem 0;
+    width: 95vw;
+  }
   h2 {
     font-size: 1.3rem;
+  }
+  .inputs {
+    grid-column: span 2;
   }
   button {
     margin: 0 5rem;
