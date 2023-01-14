@@ -300,6 +300,13 @@ a {
     padding: 1rem 1.5rem;
     z-index: 4;
   }
+  form {
+    justify-items: center;
+  }
+  .inputs,
+  select {
+    width: 100%;
+  }
   .background {
     background-size: 250px 250px;
   }
