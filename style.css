@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-size: 100%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -89,6 +90,7 @@ main {
   display: flex;
   justify-content: start;
   height: 100%;
+width: 40%;
   align-items: center;
   flex-direction: column;
 }
@@ -136,12 +138,10 @@ h3 span {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  width: 100%;
-  max-width: 600px;
   color: white;
   background-color: rgba(40, 40, 40, 0.7);
   opacity: 0.85;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   box-shadow: 8px 5px 15px #00000050;
   transition: all 0.5s;
@@ -154,7 +154,6 @@ h3 span {
   background-color: rgba(40, 40, 40, 0.9);
 }
 .form-section {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,12 +267,12 @@ a {
     opacity: 1;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
   main {
     padding: 4rem 2rem;
   }
-  .box img {
-    transform: translateY(-2rem);
+  .hero-left {
+    width: auto;
   }
   footer {
     padding: 1.75rem 3rem;
@@ -285,7 +284,7 @@ a {
     font-size: 3.5rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   main {
     flex-direction: column;
     padding: 1rem;
@@ -294,12 +293,10 @@ a {
     display: none;
   }
   .form-section {
-    width: 100%;
     margin-bottom: 1.5rem;
   }
   .form-wrapper {
-    padding: 1rem 0.25rem;
-    width: 80%;
+    padding: 1rem 1.5rem;
     z-index: 4;
   }
   .background {
@@ -334,14 +331,10 @@ a {
   button.get-my-quote {
     margin: 0;
   }
-  .form-wrapper {
-    padding: 1rem;
-    width: 95%;
-  }
   input,
   select {
     padding: .8rem 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .footer-text {
     flex-direction: column;
@@ -376,7 +369,7 @@ a {
   input,
   select {
     padding: .8rem 0;
-    font-size: .8rem;
+    font-size: .65rem;
   }
   main {
     padding: 1rem 0;
