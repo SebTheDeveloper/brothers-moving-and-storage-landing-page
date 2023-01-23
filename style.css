@@ -167,7 +167,8 @@ form {
 }
 .inputs {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   flex-direction: column;
 }
@@ -181,8 +182,8 @@ select {
   transition: all 0.5s;
   font-size: 1rem;
   padding: 0.8em;
-  grid-column: span 1;
   color: #4a4a4a;
+  min-width: 100%;
 }
 ::placeholder {
   color: #4a4a4a;
