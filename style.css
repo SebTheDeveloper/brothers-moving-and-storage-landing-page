@@ -245,10 +245,6 @@ input {
 input:hover {
   box-shadow: inset 2px 0 10px #00000090;
 }
-#referral-source {
-  visibility: hidden;
-  position: absolute;
-}
 button {
   cursor: pointer;
   color: white;
