@@ -6,3 +6,18 @@ function parallax(e) {
     const y = (window.innerHeight - e.pageY*(3))/100;
     box.style.transform = `translateX(${x + 50}px) translateY(${y}px)`;
 }
+
+const phoneCard = document.querySelectorAll('.phone-card');
+
+phoneCard.forEach(card => {
+    card.addEventListener('click', () => {
+        card.querySelector('a').click();
+    });
+});
+
+const form = document.querySelector('form');
+const successMsg = document.querySelector('.success-card');
+
+form.addEventListener('submit', (e) => {
+    successMsg.style.display = 'flex';
+});

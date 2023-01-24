@@ -20,6 +20,57 @@ body {
   display: flex;
   flex-direction: column;
 }
+.success-card,
+.success-card div {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.success-card {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #30303090;
+  opacity: 0;
+  animation: fade-in .3s ease-in-out forwards;
+}
+.success-card div {
+  width: 350px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.75rem;
+  gap: 1.5rem;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.801);
+}
+.success-card span {
+  color: var(--green);
+  font-weight: 700;
+}
+.success-card img {
+  width: 200px;
+  transition: all .2s ease-in-out;
+}
+.success-card img:hover {
+  transform: scale(.95);
+}
+.success-card p:nth-of-type(2) {
+  font-size: 1.2rem;
+  opacity: .8;
+}
+.success-card p:nth-of-type(2):hover {
+  opacity: 1;
+}
+.success-card p:nth-of-type(2) a {
+  color: blue;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -194,7 +245,7 @@ input {
 input:hover {
   box-shadow: inset 2px 0 10px #00000090;
 }
-.add-fields {
+#referral-source {
   visibility: hidden;
   position: absolute;
 }
